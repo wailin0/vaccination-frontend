@@ -7,7 +7,12 @@ const Dashboard = () => {
   
   const [counts, setCounts] = useState(null)
 
-
+  useEffect(() => {
+    vaccinatedUserService.countUsers()
+      .then(result => {
+        setCounts(result)
+      })
+  }, [])
 
   const data = [
     {name: '', value: 0}, {name: '', value: 120}, {name: '', value: 50}, {name: '', value: 90}, {name: '', value: 20},
