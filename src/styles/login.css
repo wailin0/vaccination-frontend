@@ -1,0 +1,27 @@
+.login-container {
+    min-height: 100vh;
+    border-radius: 10px;
+    background-color: #EEEDED;
+    width: 100%;
+    padding-inline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    background-color: #A484FF;
+    color:#FDFDFD;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3em;
+    width: 500px;
+}
+
+.login-btn {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    width: 100px;
+    height: 30px;
+    margin-inline: 10px;
+}

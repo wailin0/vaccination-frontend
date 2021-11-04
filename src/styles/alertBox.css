@@ -1,0 +1,56 @@
+.alert-container {
+    background-color: grey;
+    border-radius: 10px;
+    position: fixed;
+    transition: all .5s ease-out;
+}
+
+.alert-container > div {
+    padding: 1em;
+    border-bottom: 1px solid rgb(156, 152, 152);
+}
+
+.alert-container > div:nth-child(1) h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.alert-container > div:nth-child(2) {
+    padding-block: 2em;
+}
+
+.alert-container > div:nth-child(3) {
+    text-align: right;
+}
+
+.alert-container > div:nth-child(3) button {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+}
+
+.alert-container button:hover, .alert-container button:focus {
+    background-color: #ccaaaa;
+    color: black;
+}
+
+.alert-container button:active {
+    background-color: #e4c4c4;
+}
+
+.show {
+    min-width: 350px;
+    min-height: 150px;
+    scale: 1;
+    top: 40vh;
+    left: 50vw;
+}
+
+.hide {
+    scale: 0;
+    width: 0;
+    height: 0;
+    left: 50vw;
+    top: -150vh;
+}
