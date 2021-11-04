@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from "axios"
-const baseUrl = 'http://192.168.100.3:4000/users'
+const baseUrl = 'https://vaccinationmm-backend.herokuapp.com/users'
 // const baseUrl = 'http://localhost:4000/users'
 
 export let token = null

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from "axios"
 import { token } from "./vaccinatedUser"
-const baseUrl = 'http://192.168.100.3:4000/users/'
+const baseUrl = 'https://vaccinationmm-backend.herokuapp.com/users'
 
 const login = async credential => {
     const response = await axios.post(baseUrl+'/login', credential)
